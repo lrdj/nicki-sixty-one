@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//nicki-sixty-one//Birthday gift//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kobido session
+BEGIN:VEVENT
+UID:kobido-20261106@lrdj.github.io
+DTSTAMP:20261007T000000Z
+DTSTART:20261106T100000Z
+DTEND:20261106T111500Z
+SUMMARY:Kobido session at Aga & Ola Clinic
+DESCRIPTION:Your first Kobido session (consultation and long-term results planning) with Sarah D.\n\nCome with a clean face and no heavy creams or oils. Fill in the health and Kobido questionnaires beforehand.\n\nAll the details: https://lrdj.github.io/nicki-sixty-one/
+LOCATION:Aga & Ola Clinic\, 103 West Regent Street\, Glasgow G2 2DQ
+URL:https://lrdj.github.io/nicki-sixty-one/
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Kobido session tomorrow at Aga & Ola Clinic
+END:VALARM
+END:VEVENT
+END:VCALENDAR
