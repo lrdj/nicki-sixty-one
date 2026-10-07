@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sheila McDonald</title>
+<meta name="description" content="Hey Nicki, this is the artist who made your brooch. Sheila McDonald, Scottish jeweller and enameller.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23fff'/%3E%3Crect x='10' y='10' width='28' height='28' fill='%23000'/%3E%3Crect x='38' y='38' width='16' height='16' fill='%23000'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --paper: #ffffff;
+    --rule: #0a0a0a;
+    --muted: #5e5e5e;
+    --gutter: clamp(16px, 5vw, 64px);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-feature-settings: "ss01", "cv11";
+  }
+  a { color: inherit; }
+  img { display: block; max-width: 100%; height: auto; }
+
+  .wrap { padding-left: var(--gutter); padding-right: var(--gutter); }
+
+  /* Header */
+  .site-head {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 28px; padding-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mark { display: block; width: 44px; height: 44px; }
+  .site-head__right { font-weight: 500; font-size: 15px; letter-spacing: 0.01em; }
+
+  /* Title */
+  .title { padding-top: clamp(32px, 6vw, 72px); padding-bottom: clamp(32px, 5vw, 64px); }
+  .title h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: clamp(48px, 10vw, 136px);
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+  }
+  .title p {
+    margin: 24px 0 0;
+    font-size: clamp(20px, 2.6vw, 30px);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    max-width: 30ch;
+  }
+
+  /* Sections */
+  section { padding-top: clamp(36px, 5vw, 64px); padding-bottom: clamp(36px, 5vw, 64px); border-top: 1px solid var(--rule); }
+  section h2 { margin: 0 0 28px; font-weight: 800; font-size: clamp(30px, 4.5vw, 48px); letter-spacing: -0.03em; line-height: 1.05; }
+  .cols { display: grid; grid-template-columns: 1fr; gap: 32px; }
+  @media (min-width: 820px) { .cols { grid-template-columns: 5fr 7fr; gap: 64px; } }
+  .lede { font-size: clamp(20px, 2.6vw, 30px); line-height: 1.25; letter-spacing: -0.015em; font-weight: 400; margin: 0; max-width: 32ch; }
+  .body p { margin: 0 0 1em; max-width: 60ch; }
+  .body p:last-child { margin-bottom: 0; }
+
+  /* Museum label */
+  .label { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--rule); margin: 28px 0 0; }
+  .label > div { display: grid; grid-template-columns: 11em 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 17px; }
+  .label dt { margin: 0; color: var(--muted); font-weight: 500; }
+  .label dd { margin: 0; font-weight: 500; }
+  @media (max-width: 520px) { .label > div { grid-template-columns: 1fr; gap: 4px; } }
+
+  /* Picture grids, like the Highlights row */
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+  @media (min-width: 820px) { .grid { grid-template-columns: repeat(3, 1fr); gap: 40px 32px; } }
+  .grid--two { grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .grid--two { grid-template-columns: 1fr 1fr; } }
+  figure { margin: 0; }
+  figure img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #eee; }
+  figure.tall img { aspect-ratio: 4 / 5; }
+  figcaption { margin-top: 12px; font-weight: 800; font-size: 17px; letter-spacing: -0.01em; line-height: 1.2; }
+  figcaption small { display: block; margin-top: 3px; font-weight: 400; font-size: 15px; color: var(--muted); }
+  .intro { margin: -8px 0 32px; font-size: 18px; max-width: 60ch; }
+  /* Artist */
+  .artist { display: grid; grid-template-columns: 1fr; gap: 32px; }
+  @media (min-width: 820px) { .artist { grid-template-columns: 5fr 7fr; gap: 64px; } }
+  .artist img { width: 100%; height: auto; }
+
+  /* Find out more list */
+  .more { list-style: none; margin: 28px 0 0; padding: 0; }
+  .more li { margin: 0 0 10px; font-weight: 500; font-size: 17px; }
+  .more a { text-decoration: none; }
+  .more a::before { content: "\2192"; display: inline-block; width: 1.6em; font-weight: 500; }
+  .more a:hover, .more a:focus { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
+
+  /* Footer */
+  footer { padding-top: 36px; padding-bottom: 56px; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 12px 40px; justify-content: space-between; font-size: 15px; font-weight: 500; }
+  footer p { margin: 0; }
+  footer a { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
+</style>
+</head>
+<body>
+
+<header class="site-head wrap">
+  <svg class="mark" viewBox="0 0 44 44" aria-label="Nicki's brooch" role="img">
+    <rect x="0" y="0" width="22" height="22" fill="#0a0a0a"/>
+    <rect x="22" y="0" width="11" height="11" fill="#0a0a0a"/>
+    <rect x="0" y="22" width="11" height="11" fill="#0a0a0a"/>
+    <rect x="33" y="33" width="11" height="11" fill="#0a0a0a"/>
+  </svg>
+  <div class="site-head__right">Happy birthday Nicki :-)</div>
+</header>
+
+<main>
+  <div class="title wrap">
+    <h1>Sheila McDonald</h1>
+    <p>Hey Nicki. This is the artist who made your brooch. Isn't her work lovely?</p>
+  </div>
+
+  <section id="brooch" class="wrap">
+    <h2>Your brooch</h2>
+    <div class="cols">
+      <p class="lede">A highly unusual Scottish contemporary silver and enamel brooch formed as a stylised bird in flight.</p>
+      <div class="body">
+        <p>Striking deep blue vitreous enamel highlighted with teal and ochre, with textural detail in fine gold and silver leaf.</p>
+        <dl class="label">
+          <div><dt>Artist</dt><dd>Sheila McDonald (b. 1958)</dd></div>
+          <div><dt>Maker's mark</dt><dd>SMcD</dd></div>
+          <div><dt>Hallmarked</dt><dd>London, 2010</dd></div>
+          <div><dt>Code</dt><dd>GF-03/26V</dd></div>
+          <div><dt>Provenance</dt><dd>Purchased from the artist, 2010</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>The artist</h2>
+    <div class="artist">
+      <figure><img src="images/smd/studio-portrait.jpg" width="1000" height="955" loading="lazy" alt="Sheila McDonald in her studio, holding up a small enamelled silver vessel"><figcaption>Sheila McDonald<small>Beaverhall Studios, Edinburgh</small></figcaption></figure>
+      <div class="body">
+        <p>Sheila McDonald (b. 1958) is a Scottish jewellery designer. She studied Textile Design at Glasgow School of Art and Jewellery at the Royal College of Art in London.</p>
+        <p>She set up a workshop with her husband Rod Kelly, silversmith, and most of her work features a strong textile influence combining many different enamelling techniques.</p>
+        <p>She now works from Beaverhall Studios in Edinburgh, primarily in silver, gold and vitreous enamel. She is a Freeman of the Goldsmiths' Company, teaches enamelling at West Dean College and is the author of <em>Creative Enamelling</em>, published by Crowood.</p>
+        <ul class="more">
+          <li><a href="https://www.sheilamcdonaldjewellery.co.uk/" rel="noopener">Visit Sheila McDonald's website</a></li>
+          <li><a href="https://www.sheilamcdonaldjewellery.co.uk/about" rel="noopener">Read about the artist</a></li>
+          <li><a href="https://www.sheilamcdonaldjewellery.co.uk/gallery/brooches" rel="noopener">See more of her brooches</a></li>
+          <li><a href="https://www.sheilamcdonaldjewellery.co.uk/gallery/eye-collection" rel="noopener">See the Eyes Collection</a></li>
+          <li><a href="https://www.crowood.com/book/creative-enamelling/" rel="noopener">Creative Enamelling, the book</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid" style="margin-top: clamp(36px, 5vw, 64px)">
+      <figure><img src="images/smd/seedhead-brooch.jpg" width="1000" height="1000" loading="lazy" alt="Square brooch with blue, orange and mauve enamelled petals edged in gold leaf, beside a deep blue disc scattered with gold squares"><figcaption>Seedhead brooch<small>Enamel and gold leaf</small></figcaption></figure>
+      <figure><img src="images/smd/peacock-brooch.jpg" width="1000" height="1328" loading="lazy" alt="Oval gold and blue enamel brooch with a baroque pearl drop, on a red dress"><figcaption>Peacock brooch<small>Enamel, gold leaf and pearl</small></figcaption></figure>
+      <figure><img src="images/smd/mosaic-brooches.jpg" width="1000" height="1251" loading="lazy" alt="Seven mosaic-like brooches in star, ring and square shapes with pearl drops, on black velvet in a gilt frame"><figcaption>Mosaic brooches<small>Enamel, gold leaf and pearls</small></figcaption></figure>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Happy birthday Nicki :-)</p>
+  <p>Photographs &copy; Sheila McDonald, from <a href="https://www.sheilamcdonaldjewellery.co.uk/" rel="noopener">sheilamcdonaldjewellery.co.uk</a></p>
+</footer>
+
+</body>
+</html>
